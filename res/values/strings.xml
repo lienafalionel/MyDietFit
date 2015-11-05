@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyDietFit</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="pas_d_exercices_disponibles">Pas d\'exercices disponibles</string>
+    <string name="provider_enabled">Le provider %s est maintenant activé</string>
+    <string name="provider_disabled">Le provider %s est maintenant désactivé</string>
+    <string name="imc">IMC</string>
+    <string name="interpretation">Interprétation</string>
+    <string name="obesite_morbide_ou_massive">obésité morbide ou massive</string>
+    <string name="voir_ma_progression">Voir ma progression</string>
+    <string name="voir_mes_fiches_de_suivi">Voir mes fiches de suivi</string>
+    <string name="ajouter_une_fiche_de_suivi">Ajouter une fiche de suivi</string>
+    <string name="moins_de_15">moins de 15</string>
+    <string name="maigreur">maigreur</string>
+    <string name="plus_de_40">plus de 40</string>
+    <string name="surpoids">surpoids</string>
+    <string name="quel_serait_votre_poids_">Quel serait votre poids ?</string>
+    <string name="adresse_de_depart">Adresse de départ</string>
+    <string name="adresse_d_arrivee">Adresse d\'arrivée</string>
+    <string name="pas_de_parties_du_corps">Pas de parties du corps</string>
+    <string name="_15_a_18_5">15 à 18,5</string>
+    <string name="_18_5_a_25">18,5 à 25</string>
+    <string name="corpulence_normale">corpulence normale</string>
+    <string name="_25_a_30">25 à 30</string>
+    <string name="_30_a_35">30 à 35</string>
+    <string name="obesite_moderee">obésité modérée</string>
+    <string name="pas_d_utilisateurs_crees">Pas d\'utilisateurs crées</string>
+    <string name="obesite_severe">obésité sévère</string>
+    <string name="denutrition">dénutrition</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="evenement_">Evenement:</string>
+    <string name="taille_">Taille:</string>
+    <string name="poids_">Poids:</string>
+    <string name="pas_de_categories_de_nutrition">Pas de catégories de nutrition</string>
+    <string name="pas_de_fiches_de_nutrition_disponibles_pour_le_moment_">Pas de fiches de nutrition disponibles pour le moment.</string>
+
+	<string name="menu_settings">Settings</string>
+	<string name="drawer_open">Open menu</string>
+	<string name="drawer_close">Close menu</string>
+	<string name="search">Search</string>
+	<string name="_35_40">35 à 40</string>
+	
+</resources>

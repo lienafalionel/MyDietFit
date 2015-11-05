@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/ajoutFicheSuivi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:text="@string/ajouter_une_fiche_de_suivi" />
+
+    <Button
+        android:id="@+id/voirFicheSuivi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/voirProgression"
+        android:layout_alignRight="@+id/voirProgression"
+        android:layout_centerVertical="true"
+        android:text="@string/voir_mes_fiches_de_suivi" />
+
+    <Button
+        android:id="@+id/voirProgression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ajoutFicheSuivi"
+        android:layout_alignRight="@+id/ajoutFicheSuivi"
+        android:layout_below="@+id/voirFicheSuivi"
+        android:layout_marginTop="62dp"
+        android:text="@string/voir_ma_progression" />
+
+</RelativeLayout>

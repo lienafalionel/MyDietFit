@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.iut.mydietfit"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="20" />
+    
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    
+    <permission 
+        android:name="fr.iut.mydietfit.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <uses-library android:name="com.google.android.maps" />
+        
+        <meta-data 
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDM-XaTAhR4kGiA_LY2DfKl8oOp3vnra08"/>
+        
+        <activity
+            android:name="fr.iut.mydietfit.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fr.iut.mydietfit.ListeUtilisateursActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fr.iut.mydietfit.AccueilActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fr.iut.mydietfit.ListeExercices"
+            android:label="@string/app_name" 
+            android:parentActivityName="fr.iut.mydietfit.AccueilActivity" >
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.iut.mydietfit.AccueilActivity"/>
+        </activity>
+        <activity 
+            android:name="fr.iut.mydietfit.AjoutFiche"
+            android:label="@string/app_name"
+            android:parentActivityName="fr.iut.mydietfit.AccueilActivity">
+            <meta-data
+         		android:name="android.support.PARENT_ACTIVITY"
+         		android:value="fr.iut.mydietfit.AccueilActivity" />
+        </activity>
+        <activity 
+            android:name="fr.iut.mydietfit.ListeFicheActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="fr.iut.mydietfit.AccueilActivity">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.iut.mydietfit.AccueilActivity"/>
+        </activity>
+        <activity 
+            android:name="fr.iut.mydietfit.VoirFicheActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="fr.iut.mydietfit.ListeFicheActivity">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.iut.mydietfit.ListeFicheActitivy"/>
+        </activity>
+        <activity 
+            android:name="fr.iut.mydietfit.LocalisationActivity"
+            android:label="@string/app_name">
+            
+        </activity>
+        <activity 
+            android:name="fr.iut.mydietfit.VoirProgressionActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="fr.iut.mydietfit.ListeFicheActivity">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.iut.mydietfit.ListeFicheActitivy"/>
+        </activity>
+        <activity 
+            android:name="fr.iut.mydietfit.ListePartieCorpsActivity"
+            android:label="@string/app_name">
+            
+        </activity>
+        <activity 
+            android:name="fr.iut.mydietfit.ListeNutrition"
+            android:label="@string/app_name"
+            android:parentActivityName="fr.iut.mydietfit.AccueilActivity">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.iut.mydietfit.AccueilActivity"/>
+        </activity>
+        <activity 
+            android:name="fr.iut.mydietfit.ExerciceActivity"
+            android:label="@string/app_name">
+            
+        </activity>
+        <activity 
+            android:name="fr.iut.mydietfit.Slider"
+            android:label="@string/app_name">
+            
+        </activity>
+        
+        <activity android:name="fr.iut.mydietfit.UtilisateursActivity"
+            android:label="@string/app_name">
+            
+            
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/voir_progression_imc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="73dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/voir_progression_rappel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/voir_progression_imc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="280dp" >
+
+            <TableRow>
+
+                <TextView android:text="@string/imc" />
+
+                <TextView android:text="@string/interpretation" />
+
+                <TextView android:text="@string/quel_serait_votre_poids_" />
+            </TableRow>
+
+            <TableRow android:id="@+id/voir_progression_trDenutrition">
+
+                <TextView android:text="@string/moins_de_15" />
+
+                <TextView android:text="@string/denutrition" />
+
+                <TextView
+                    android:id="@+id/voir_progression_denutrition" />
+            </TableRow>
+
+            <TableRow android:id="@+id/voir_progression_trMaigreur">
+
+                <TextView android:text="@string/_15_a_18_5" />
+
+                <TextView android:text="@string/maigreur" />
+
+                <TextView android:id="@+id/voir_progression_maigreur" />
+            </TableRow>
+
+            <TableRow android:id="@+id/voir_progression_trNormal">
+
+                <TextView android:text="@string/_18_5_a_25" />
+
+                <TextView android:text="@string/corpulence_normale" />
+
+                <TextView android:id="@+id/voir_progression_normal" />
+            </TableRow>
+
+            <TableRow android:id="@+id/voir_progression_trSurpoids">
+
+                <TextView android:text="@string/_25_a_30" />
+
+                <TextView android:text="@string/surpoids" />
+
+                <TextView android:id="@+id/voir_progression_surpoids" />
+            </TableRow>
+
+            <TableRow android:id="@+id/voir_progression_trObesiteMod">
+
+                <TextView android:text="@string/_30_a_35" />
+
+                <TextView android:text="@string/obesite_moderee" />
+
+                <TextView android:id="@+id/voir_progression_obesite_mod" />
+            </TableRow>
+
+            <TableRow android:id="@+id/voir_progression_trObesiteSev">
+
+                <TextView android:text="@string/_35_40" />
+
+                <TextView android:text="@string/obesite_severe" />
+
+                <TextView android:id="@+id/voir_progression_obesite_sev" />
+            </TableRow>
+
+            <TableRow android:id="@+id/voir_progression_trObesiteMorb">
+
+                <TextView android:text="@string/plus_de_40" />
+
+                <TextView android:text="@string/obesite_morbide_ou_massive" />
+
+                <TextView android:id="@+id/voir_progression_obesite_morb" />
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
